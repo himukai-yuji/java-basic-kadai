@@ -44,9 +44,7 @@ public class Posts_chapter07 {
             System.out.println("ユーザーIDが1002のレコードを検索しました");
 
             // SQLクエリの実行結果を抽出
-            int count=0;
             while(result.next()) {
-            	count++;
                 Date postedAt = result.getDate("posted_at");
                 String postContent = result.getString("post_content");
                 int Likes = result.getInt("likes");
@@ -55,9 +53,6 @@ public class Posts_chapter07 {
                 +":投稿日時=" + postedAt 
                 + "／投稿内容=" + postContent 
                 + "／いいね数="+Likes );
-                if(count>=2) {
-                	break;
-                }
             }
         }catch (SQLException e) {
 			System.out.println("エラー発生:"+ e.getMessage());
