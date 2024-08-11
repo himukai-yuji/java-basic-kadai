@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+/*全体*/
+.wrapper {
+/*   max-width: 300px;*/
+   margin: 0 ;
+   color: #666;
+   position: absolute;
+}
+
+#header {
+   text-align: center;
+   font-size: 24px;
+   width: 100%;
+   margin: 1rem 0 0;
+}
+
+/*カレンダー*/
+#calendar {
+   text-align: center;
+/*   width: 40%;*/
+}
+
+table {
+   outline: 2px solid #ddd;
+   border-collapse: collapse;
+   width: 100px;
+   height: 150px;
+}
+
+th {
+   color: #000;
+}
+
+th,
+td {
+   outline: 1px solid #ddd;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   text-align: center;
+}
+
+/*日曜日*/
+td:first-child {
+   color: red;
+}
+
+/*土曜日*/
+td:last-child {
+   color: blue;
+}
+
+/*前後月の日付*/
+td.disabled {
+   color: rgb(192, 192, 192);
+}
+td.is-disabled {
+   color:#a9a9a9;
+}
+
+/*本日*/
+td.today {
+   background-color: rgb(0, 128, 192);
+   color: #fff;
+}
+
+メモ機能
+.calendar_td>#mytable{
+	padding: 0;
+	margin:0;
+/*	width: 50%;*/
+/*	height: 100%;*/
+	background-color: #a9a9a9;
+}
+
+.calendar_td>#mytable>.myth{
+	background-color: darkgray;
+	padding: 0;
+	margin: 0;
+	height: 30%;
+}
+textarea{
+	width: 150px;
+	height: 170px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/*ボタン*/
+#next-prev-button {
+   position: relative;
+   bottom: 20px;
+}
+
+#next-prev-button button {
+   cursor: pointer;
+   background: #B78D4A;
+   color: #fff;
+   border: 1px solid #B78D4A;
+   border-radius: 4px;
+   font-size: 1rem;
+   padding: 0.5rem 2rem;
+   margin: 1rem 0;
+}
+
+#next-prev-button button:hover {
+   background-color: #D4BB92;
+   border-color: #D4BB92;
+}
+
+#prev {
+   float: left;
+}
+
+#next {
+   float: right;
+}
